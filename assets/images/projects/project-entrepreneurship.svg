@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgBiz" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14080e"/>
+      <stop offset="50%" stop-color="#240c18"/>
+      <stop offset="100%" stop-color="#10050b"/>
+    </linearGradient>
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3c99f"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+    <linearGradient id="crimsonAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e03b4c"/>
+      <stop offset="100%" stop-color="#8b1528"/>
+    </linearGradient>
+    <filter id="shadowBiz" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgBiz)"/>
+  <circle cx="200" cy="140" r="160" fill="#e03b4c" opacity="0.14" filter="blur(65px)"/>
+  <circle cx="620" cy="380" r="150" fill="#f3c99f" opacity="0.12" filter="blur(65px)"/>
+
+  <!-- Main Window: Business Concept & Entrepreneurship Presentation -->
+  <g transform="translate(60, 45)" filter="url(#shadowBiz)">
+    <rect width="680" height="410" rx="16" fill="#180e15" stroke="#3d1d2b" stroke-width="1.5"/>
+    <!-- Topbar -->
+    <rect width="680" height="42" rx="16" fill="#22111b"/>
+    <rect y="30" width="680" height="12" fill="#22111b"/>
+    <circle cx="28" cy="21" r="5" fill="#e03b4c"/>
+    <circle cx="46" cy="21" r="5" fill="#e5a86d"/>
+    <circle cx="64" cy="21" r="5" fill="#48bb78"/>
+    <text x="340" y="26" fill="#c58e9f" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Cultural Week Entrepreneurship Project • Business Concept &amp; Pitch</text>
+
+    <!-- Header Banner -->
+    <rect x="25" y="60" width="630" height="60" rx="10" fill="#22101c" stroke="#3d1d2b"/>
+    <text x="45" y="85" fill="#f8f4f0" font-family="Georgia, serif" font-size="14" font-weight="bold">Cultural Week Entrepreneurship Project (2025)</text>
+    <text x="45" y="105" fill="#f3c99f" font-family="sans-serif" font-size="11">Business Planning • Product Presentation • Customer Engagement • Teamwork</text>
+    <rect x="520" y="75" width="120" height="28" rx="6" fill="url(#crimsonAcc)"/>
+    <text x="580" y="93" fill="#fff" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Team Member</text>
+
+    <!-- Left: Business Canvas / Value Proposition Pillars -->
+    <rect x="25" y="135" width="415" height="250" rx="10" fill="#130910" stroke="#381827"/>
+    <text x="45" y="160" fill="#f8f4f0" font-family="sans-serif" font-size="12" font-weight="600">Business Model &amp; Presentation Canvas</text>
+    <text x="45" y="176" fill="#a8929e" font-family="sans-serif" font-size="10">Practical Venture Planning &amp; Live Customer Feedback</text>
+
+    <!-- Pillar 1: Value Proposition -->
+    <rect x="45" y="195" width="180" height="75" rx="8" fill="#21101c" stroke="#3d1d2b"/>
+    <text x="55" y="215" fill="#f3c99f" font-family="sans-serif" font-size="10.5" font-weight="bold">Value Proposition</text>
+    <text x="55" y="233" fill="#stone-300" fill-opacity="0.8" font-family="sans-serif" font-size="9" fill="#e5ded8">Targeted customer need solution</text>
+    <text x="55" y="249" fill="#stone-400" font-family="sans-serif" font-size="9" fill="#a8929e">Practical market positioning</text>
+    <rect x="55" y="255" width="60" height="9" rx="4.5" fill="#c52233" opacity="0.8"/>
+
+    <!-- Pillar 2: Customer Engagement -->
+    <rect x="240" y="195" width="180" height="75" rx="8" fill="#21101c" stroke="#3d1d2b"/>
+    <text x="250" y="215" fill="#f3c99f" font-family="sans-serif" font-size="10.5" font-weight="bold">Customer Engagement</text>
+    <text x="250" y="233" fill="#e5ded8" font-family="sans-serif" font-size="9">Direct attendee interaction</text>
+    <text x="250" y="249" fill="#a8929e" font-family="sans-serif" font-size="9">Live product showcase &amp; pitch</text>
+    <rect x="250" y="255" width="70" height="9" rx="4.5" fill="#e5a86d" opacity="0.8"/>
+
+    <!-- Pillar 3: Team Collaboration -->
+    <rect x="45" y="285" width="180" height="85" rx="8" fill="#21101c" stroke="#3d1d2b"/>
+    <text x="55" y="305" fill="#f3c99f" font-family="sans-serif" font-size="10.5" font-weight="bold">Collaborative Execution</text>
+    <text x="55" y="323" fill="#e5ded8" font-family="sans-serif" font-size="9">Cross-functional student team</text>
+    <text x="55" y="339" fill="#a8929e" font-family="sans-serif" font-size="9">Task delegation &amp; timelines</text>
+    <text x="55" y="355" fill="#48bb78" font-family="sans-serif" font-size="9">✓ Successful Team Delivery</text>
+
+    <!-- Pillar 4: Financial Viability -->
+    <rect x="240" y="285" width="180" height="85" rx="8" fill="#21101c" stroke="#3d1d2b"/>
+    <text x="250" y="305" fill="#f3c99f" font-family="sans-serif" font-size="10.5" font-weight="bold">Business Planning</text>
+    <text x="250" y="323" fill="#e5ded8" font-family="sans-serif" font-size="9">Cost structure &amp; revenue logic</text>
+    <text x="250" y="339" fill="#a8929e" font-family="sans-serif" font-size="9">Pricing &amp; sales pitch deck</text>
+    <text x="250" y="355" fill="#f3c99f" font-family="sans-serif" font-size="9">Presented during Cultural Week</text>
+
+    <!-- Right: Project Attributes & Competencies -->
+    <rect x="455" y="135" width="200" height="250" rx="10" fill="#21101b" stroke="#3d1d2b"/>
+    <text x="470" y="160" fill="#f8f4f0" font-family="sans-serif" font-size="12" font-weight="600">Core Experience</text>
+    <text x="470" y="176" fill="#f3c99f" font-family="sans-serif" font-size="10">Practical Venture Skills</text>
+
+    <!-- Metric 1 -->
+    <rect x="470" y="195" width="170" height="45" rx="6" fill="#180a13" stroke="#3d1d2b"/>
+    <text x="480" y="211" fill="#a8929e" font-family="sans-serif" font-size="9">Venture Context</text>
+    <text x="480" y="228" fill="#f8f4f0" font-family="sans-serif" font-size="11" font-weight="bold">Cultural Week 2025</text>
+
+    <!-- Metric 2 -->
+    <rect x="470" y="250" width="170" height="45" rx="6" fill="#180a13" stroke="#3d1d2b"/>
+    <text x="480" y="266" fill="#a8929e" font-family="sans-serif" font-size="9">Team Contribution</text>
+    <text x="480" y="283" fill="#e5a86d" font-family="sans-serif" font-size="11" font-weight="bold">Product Pitch &amp; Planning</text>
+
+    <!-- Metric 3 -->
+    <rect x="470" y="305" width="170" height="65" rx="6" fill="#180a13" stroke="#3d1d2b"/>
+    <text x="480" y="321" fill="#a8929e" font-family="sans-serif" font-size="9">Key Outcomes</text>
+    <text x="480" y="337" fill="#f8f4f0" font-family="sans-serif" font-size="10.5" font-weight="bold">Customer Engagement</text>
+    <text x="480" y="353" fill="#48bb78" font-family="sans-serif" font-size="9.5">Teamwork &amp; Communication</text>
+  </g>
+</svg>

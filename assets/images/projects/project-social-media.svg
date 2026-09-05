@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgData" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14080e"/>
+      <stop offset="60%" stop-color="#230b18"/>
+      <stop offset="100%" stop-color="#0f050a"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e03b4c"/>
+      <stop offset="100%" stop-color="#8b1528"/>
+    </linearGradient>
+    <linearGradient id="barGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f3c99f"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+    <filter id="shadowData" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgData)"/>
+  <circle cx="680" cy="120" r="150" fill="#e03b4c" opacity="0.14" filter="blur(60px)"/>
+  <circle cx="150" cy="400" r="160" fill="#8b1528" opacity="0.16" filter="blur(60px)"/>
+
+  <!-- Main Window: SPSS Analysis & Research Presentation -->
+  <g transform="translate(60, 45)" filter="url(#shadowData)">
+    <rect width="680" height="410" rx="16" fill="#180e15" stroke="#3d1d2b" stroke-width="1.5"/>
+    <!-- Topbar -->
+    <rect width="680" height="42" rx="16" fill="#21111b"/>
+    <rect y="30" width="680" height="12" fill="#21111b"/>
+    <circle cx="28" cy="21" r="5" fill="#e03b4c"/>
+    <circle cx="46" cy="21" r="5" fill="#e5a86d"/>
+    <circle cx="64" cy="21" r="5" fill="#48bb78"/>
+    <text x="340" y="26" fill="#c58e9f" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">IBM SPSS Statistics • Kaggle Dataset Analysis — SIMAD Innovation Lab</text>
+
+    <!-- Project Header Banner -->
+    <rect x="25" y="60" width="630" height="60" rx="10" fill="#22101c" stroke="#3d1d2b"/>
+    <text x="45" y="85" fill="#f8f4f0" font-family="Georgia, serif" font-size="14" font-weight="bold">Social Media Usage &amp; Academic Habits Analysis</text>
+    <text x="45" y="105" fill="#f3c99f" font-family="sans-serif" font-size="11">SIMAD Innovation Lab • 200 Records • 21 Variables • Academic Panel Defense</text>
+    <rect x="520" y="75" width="120" height="28" rx="6" fill="#3b1725" stroke="#e03b4c" stroke-width="1"/>
+    <text x="580" y="93" fill="#f3c99f" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Panel Defended</text>
+
+    <!-- Left: Data Chart / SPSS Output Visualization -->
+    <rect x="25" y="135" width="415" height="250" rx="10" fill="#130910" stroke="#381827"/>
+    <text x="45" y="160" fill="#f8f4f0" font-family="sans-serif" font-size="12" font-weight="600">Distribution: Daily Screen Time vs. Academic Focus Score</text>
+    <text x="45" y="176" fill="#a8929e" font-family="sans-serif" font-size="10">Kaggle Empirical Dataset • N = 200 Records</text>
+
+    <!-- Chart Gridlines -->
+    <line x1="45" y1="210" x2="415" y2="210" stroke="#331826" stroke-dasharray="3 3"/>
+    <line x1="45" y1="260" x2="415" y2="260" stroke="#331826" stroke-dasharray="3 3"/>
+    <line x1="45" y1="310" x2="415" y2="310" stroke="#331826" stroke-dasharray="3 3"/>
+    <line x1="45" y1="345" x2="415" y2="345" stroke="#3d1d2b"/>
+
+    <!-- Bar Chart Elements -->
+    <!-- Group 1 -->
+    <rect x="75" y="270" width="28" height="75" rx="4" fill="url(#barGrad)"/>
+    <rect x="108" y="240" width="28" height="105" rx="4" fill="url(#barGold)"/>
+    <text x="105" y="362" fill="#a8929e" font-family="sans-serif" font-size="9" text-anchor="middle">&lt; 2 hrs</text>
+
+    <!-- Group 2 -->
+    <rect x="160" y="230" width="28" height="115" rx="4" fill="url(#barGrad)"/>
+    <rect x="193" y="210" width="28" height="135" rx="4" fill="url(#barGold)"/>
+    <text x="190" y="362" fill="#a8929e" font-family="sans-serif" font-size="9" text-anchor="middle">2 - 4 hrs</text>
+
+    <!-- Group 3 -->
+    <rect x="245" y="195" width="28" height="150" rx="4" fill="url(#barGrad)"/>
+    <rect x="278" y="255" width="28" height="90" rx="4" fill="url(#barGold)"/>
+    <text x="275" y="362" fill="#a8929e" font-family="sans-serif" font-size="9" text-anchor="middle">4 - 6 hrs</text>
+
+    <!-- Group 4 -->
+    <rect x="330" y="180" width="28" height="165" rx="4" fill="url(#barGrad)"/>
+    <rect x="363" y="295" width="28" height="50" rx="4" fill="url(#barGold)"/>
+    <text x="360" y="362" fill="#a8929e" font-family="sans-serif" font-size="9" text-anchor="middle">&gt; 6 hrs</text>
+
+    <!-- Right: Research Highlights & SPSS Output -->
+    <rect x="455" y="135" width="200" height="250" rx="10" fill="#21101b" stroke="#3d1d2b"/>
+    <text x="470" y="160" fill="#f8f4f0" font-family="sans-serif" font-size="12" font-weight="600">Statistical Parameters</text>
+    <text x="470" y="176" fill="#f3c99f" font-family="sans-serif" font-size="10">SPSS Descriptive &amp; Inferential</text>
+
+    <!-- Metric 1 -->
+    <rect x="470" y="195" width="170" height="42" rx="6" fill="#180a13" stroke="#3d1d2b"/>
+    <text x="480" y="211" fill="#a8929e" font-family="sans-serif" font-size="9">Dataset Scope</text>
+    <text x="480" y="228" fill="#f8f4f0" font-family="sans-serif" font-size="11" font-weight="bold">200 Records • 21 Variables</text>
+
+    <!-- Metric 2 -->
+    <rect x="470" y="247" width="170" height="42" rx="6" fill="#180a13" stroke="#3d1d2b"/>
+    <text x="480" y="263" fill="#a8929e" font-family="sans-serif" font-size="9">Analytical Platform</text>
+    <text x="480" y="280" fill="#e5a86d" font-family="sans-serif" font-size="11" font-weight="bold">IBM SPSS Statistics</text>
+
+    <!-- Metric 3 -->
+    <rect x="470" y="299" width="170" height="70" rx="6" fill="#180a13" stroke="#3d1d2b"/>
+    <text x="480" y="315" fill="#a8929e" font-family="sans-serif" font-size="9">Research Defense</text>
+    <text x="480" y="332" fill="#f8f4f0" font-family="sans-serif" font-size="10.5" font-weight="bold">Formal Academic Panel</text>
+    <text x="480" y="352" fill="#48bb78" font-family="sans-serif" font-size="9.5">✓ Successfully Defended</text>
+  </g>
+</svg>

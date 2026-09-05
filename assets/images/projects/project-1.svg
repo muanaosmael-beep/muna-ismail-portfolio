@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180c12"/>
+      <stop offset="50%" stop-color="#2a101d"/>
+      <stop offset="100%" stop-color="#12080e"/>
+    </linearGradient>
+    <linearGradient id="cardGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c52233" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#e5a86d" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e03b4c"/>
+      <stop offset="100%" stop-color="#8b1528"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg1)"/>
+  
+  <!-- Decorative grid lines & ambient orbs -->
+  <circle cx="200" cy="150" r="160" fill="#c52233" opacity="0.15" filter="blur(60px)"/>
+  <circle cx="650" cy="380" r="140" fill="#e5a86d" opacity="0.12" filter="blur(60px)"/>
+  
+  <!-- Browser Window Mockup -->
+  <g transform="translate(60, 45)" filter="url(#shadow)">
+    <!-- Browser chrome -->
+    <rect width="680" height="410" rx="16" fill="#1b1117" stroke="#3d1d2b" stroke-width="1.5"/>
+    <rect width="680" height="42" rx="16" fill="#24141f"/>
+    <rect y="30" width="680" height="12" fill="#24141f"/>
+    <!-- Window controls -->
+    <circle cx="28" cy="21" r="5" fill="#e03b4c"/>
+    <circle cx="46" cy="21" r="5" fill="#e5a86d"/>
+    <circle cx="64" cy="21" r="5" fill="#48bb78"/>
+    
+    <!-- URL pill -->
+    <rect x="180" y="10" width="320" height="22" rx="11" fill="#13090e" stroke="#3d1d2b"/>
+    <text x="340" y="25" fill="#a8929e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">lumina-design.system/preview</text>
+    
+    <!-- Canvas content -->
+    <!-- Sidebar -->
+    <rect x="0" y="42" width="160" height="368" fill="#150a11"/>
+    <rect x="20" y="65" width="90" height="10" rx="5" fill="#6d3d52"/>
+    
+    <rect x="20" y="100" width="120" height="24" rx="6" fill="url(#accentGrad)"/>
+    <text x="32" y="116" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">Components</text>
+    
+    <rect x="20" y="135" width="100" height="16" rx="4" fill="#271520"/>
+    <rect x="20" y="160" width="110" height="16" rx="4" fill="#271520"/>
+    <rect x="20" y="185" width="85" height="16" rx="4" fill="#271520"/>
+    <rect x="20" y="210" width="115" height="16" rx="4" fill="#271520"/>
+    
+    <!-- Main content area -->
+    <text x="195" y="85" fill="#f8f4f0" font-family="Georgia, serif" font-size="20" font-weight="bold">Lumina UI System</text>
+    <text x="195" y="106" fill="#a8929e" font-family="sans-serif" font-size="12">Next-gen component tokens &amp; accessible widgets</text>
+    
+    <!-- Component Cards Grid -->
+    <!-- Card 1: Buttons -->
+    <rect x="195" y="130" width="220" height="120" rx="10" fill="#22121c" stroke="#3d1d2b"/>
+    <text x="215" y="156" fill="#e5ded8" font-family="sans-serif" font-size="12" font-weight="600">Button Variants</text>
+    <rect x="215" y="172" width="90" height="30" rx="6" fill="url(#accentGrad)"/>
+    <text x="260" y="191" fill="#fff" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Primary</text>
+    <rect x="315" y="172" width="80" height="30" rx="6" fill="transparent" stroke="#e5a86d" stroke-width="1.5"/>
+    <text x="355" y="191" fill="#e5a86d" font-family="sans-serif" font-size="11" text-anchor="middle">Outline</text>
+    <rect x="215" y="214" width="60" height="18" rx="4" fill="#381b29"/>
+    <text x="245" y="227" fill="#c58e9f" font-family="sans-serif" font-size="9" text-anchor="middle">Figma sync</text>
+    
+    <!-- Card 2: Color Palette -->
+    <rect x="435" y="130" width="220" height="120" rx="10" fill="#22121c" stroke="#3d1d2b"/>
+    <text x="455" y="156" fill="#e5ded8" font-family="sans-serif" font-size="12" font-weight="600">Theme Swatches</text>
+    <circle cx="470" cy="188" r="16" fill="#c52233"/>
+    <circle cx="510" cy="188" r="16" fill="#e5a86d"/>
+    <circle cx="550" cy="188" r="16" fill="#8b1528"/>
+    <circle cx="590" cy="188" r="16" fill="#1b1117" stroke="#e5a86d"/>
+    <circle cx="630" cy="188" r="16" fill="#f8f4f0"/>
+    <text x="455" y="228" fill="#a8929e" font-family="sans-serif" font-size="10">WCAG 2.1 AAA Compliant</text>
+
+    <!-- Card 3: Metrics / Sliders -->
+    <rect x="195" y="265" width="460" height="125" rx="10" fill="#22121c" stroke="#3d1d2b"/>
+    <text x="215" y="295" fill="#e5ded8" font-family="sans-serif" font-size="13" font-weight="600">Adaptive Dark &amp; Light Tokens</text>
+    <rect x="215" y="315" width="420" height="8" rx="4" fill="#351a27"/>
+    <rect x="215" y="315" width="310" height="8" rx="4" fill="url(#cardGlow)"/>
+    <circle cx="525" cy="319" r="8" fill="#f8f4f0" stroke="#c52233" stroke-width="2"/>
+    <text x="215" y="348" fill="#a8929e" font-family="sans-serif" font-size="11">74 UI Components • 420 Design Tokens • React &amp; Tailwind</text>
+    <rect x="215" y="360" width="80" height="18" rx="9" fill="#3b1725"/>
+    <text x="255" y="373" fill="#e03b4c" font-family="sans-serif" font-size="9" text-anchor="middle">v2.4.0 Live</text>
+  </g>
+</svg>

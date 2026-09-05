@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12060a"/>
+      <stop offset="60%" stop-color="#1e0c15"/>
+      <stop offset="100%" stop-color="#2a0d1d"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3c99f"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="500" fill="url(#bg3)"/>
+  <circle cx="250" cy="200" r="170" fill="#e5a86d" opacity="0.1" filter="blur(70px)"/>
+  <circle cx="600" cy="350" r="160" fill="#c52233" opacity="0.14" filter="blur(70px)"/>
+
+  <g transform="translate(60, 45)" filter="url(#shadow3)">
+    <!-- Main Window -->
+    <rect width="680" height="410" rx="16" fill="#170c13" stroke="#3d1d2b" stroke-width="1.5"/>
+    <!-- Topbar -->
+    <rect width="680" height="42" rx="16" fill="#20111b"/>
+    <rect y="30" width="680" height="12" fill="#20111b"/>
+    <circle cx="28" cy="21" r="5" fill="#e03b4c"/>
+    <circle cx="46" cy="21" r="5" fill="#e5a86d"/>
+    <circle cx="64" cy="21" r="5" fill="#48bb78"/>
+    <text x="340" y="26" fill="#c58e9f" font-family="sans-serif" font-size="11" text-anchor="middle">aura-atelier.luxury/autumn-collection</text>
+
+    <!-- Nav in site -->
+    <text x="40" y="75" fill="url(#goldGrad)" font-family="Georgia, serif" font-size="18" font-weight="bold" letter-spacing="2">AURA</text>
+    <text x="130" y="74" fill="#a8929e" font-family="sans-serif" font-size="11">COLLECTIONS</text>
+    <text x="240" y="74" fill="#a8929e" font-family="sans-serif" font-size="11">EDITORIAL</text>
+    <text x="330" y="74" fill="#a8929e" font-family="sans-serif" font-size="11">ARCHIVE</text>
+    <circle cx="630" cy="70" r="14" fill="#271420"/>
+    <circle cx="590" cy="70" r="14" fill="#271420"/>
+
+    <!-- Hero Card inside preview -->
+    <rect x="35" y="100" width="360" height="280" rx="12" fill="#23101c" stroke="#3d1d2b"/>
+    <!-- Simulated Editorial Photo Box -->
+    <rect x="50" y="115" width="330" height="175" rx="8" fill="#301423"/>
+    <circle cx="215" cy="185" r="55" fill="#521d37" opacity="0.6"/>
+    <path d="M 120 280 Q 215 170, 310 280 Z" fill="#8b1528" opacity="0.7"/>
+    <text x="215" y="200" fill="#f8f4f0" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle">Autumn / Winter Edition</text>
+    
+    <text x="50" y="320" fill="#f8f4f0" font-family="Georgia, serif" font-size="16" font-weight="bold">Scarlet Silk Couture Cape</text>
+    <text x="50" y="340" fill="#e5a86d" font-family="sans-serif" font-size="12" font-weight="600">$1,450 USD</text>
+    <rect x="50" y="352" width="105" height="22" rx="4" fill="url(#goldGrad)"/>
+    <text x="102" y="367" fill="#14080e" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">ADD TO BAG</text>
+
+    <!-- Side Products Grid -->
+    <rect x="415" y="100" width="230" height="132" rx="10" fill="#21101b" stroke="#3d1d2b"/>
+    <rect x="425" y="110" width="90" height="112" rx="6" fill="#2f1524"/>
+    <circle cx="470" cy="160" r="28" fill="#6d2441" opacity="0.5"/>
+    <text x="530" y="145" fill="#f8f4f0" font-family="Georgia, serif" font-size="12">Rose Quartz</text>
+    <text x="530" y="162" fill="#a8929e" font-family="sans-serif" font-size="10">Velvet Clutch</text>
+    <text x="530" y="185" fill="#e5a86d" font-family="sans-serif" font-size="12" font-weight="bold">$480</text>
+    <rect x="530" y="196" width="60" height="18" rx="3" fill="#381a2b"/>
+    <text x="560" y="209" fill="#e5ded8" font-family="sans-serif" font-size="9" text-anchor="middle">Quick View</text>
+
+    <rect x="415" y="248" width="230" height="132" rx="10" fill="#21101b" stroke="#3d1d2b"/>
+    <rect x="425" y="258" width="90" height="112" rx="6" fill="#2f1524"/>
+    <circle cx="470" cy="308" r="28" fill="#4d1b30" opacity="0.5"/>
+    <text x="530" y="293" fill="#f8f4f0" font-family="Georgia, serif" font-size="12">Crimson Flora</text>
+    <text x="530" y="310" fill="#a8929e" font-family="sans-serif" font-size="10">Embroidered Veil</text>
+    <text x="530" y="333" fill="#e5a86d" font-family="sans-serif" font-size="12" font-weight="bold">$620</text>
+    <rect x="530" y="344" width="60" height="18" rx="3" fill="#381a2b"/>
+    <text x="560" y="357" fill="#e5ded8" font-family="sans-serif" font-size="9" text-anchor="middle">Quick View</text>
+  </g>
+</svg>

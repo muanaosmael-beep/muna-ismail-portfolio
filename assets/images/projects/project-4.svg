@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15080e"/>
+      <stop offset="50%" stop-color="#240c17"/>
+      <stop offset="100%" stop-color="#11050a"/>
+    </linearGradient>
+    <linearGradient id="rubyGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e03b4c"/>
+      <stop offset="100%" stop-color="#931b2c"/>
+    </linearGradient>
+    <filter id="shadow4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg4)"/>
+  <circle cx="200" cy="120" r="160" fill="#c52233" opacity="0.15" filter="blur(65px)"/>
+  <circle cx="650" cy="380" r="150" fill="#f3c99f" opacity="0.12" filter="blur(65px)"/>
+
+  <g transform="translate(60, 45)" filter="url(#shadow4)">
+    <rect width="680" height="410" rx="16" fill="#180d14" stroke="#3d1d2b" stroke-width="1.5"/>
+    <rect width="680" height="42" rx="16" fill="#22111b"/>
+    <rect y="30" width="680" height="12" fill="#22111b"/>
+    <circle cx="28" cy="21" r="5" fill="#e03b4c"/>
+    <circle cx="46" cy="21" r="5" fill="#e5a86d"/>
+    <circle cx="64" cy="21" r="5" fill="#48bb78"/>
+    <text x="340" y="26" fill="#c58e9f" font-family="sans-serif" font-size="11" text-anchor="middle">nexus-ai.dev/neural-playground</text>
+
+    <!-- Sidebar with AI agents -->
+    <rect x="0" y="42" width="180" height="368" fill="#140a10"/>
+    <text x="20" y="75" fill="#a8929e" font-family="sans-serif" font-size="10" font-weight="bold">ACTIVE AGENTS</text>
+    
+    <rect x="15" y="90" width="150" height="40" rx="8" fill="#27121e" stroke="#481c2f"/>
+    <circle cx="35" cy="110" r="8" fill="#e03b4c"/>
+    <text x="52" y="108" fill="#f8f4f0" font-family="sans-serif" font-size="11" font-weight="600">Architect-V4</text>
+    <text x="52" y="122" fill="#48bb78" font-family="sans-serif" font-size="9">● Streaming code</text>
+
+    <rect x="15" y="140" width="150" height="40" rx="8" fill="#1c0e16"/>
+    <circle cx="35" cy="160" r="8" fill="#e5a86d"/>
+    <text x="52" y="158" fill="#e5ded8" font-family="sans-serif" font-size="11">Data Analyst</text>
+    <text x="52" y="172" fill="#88707c" font-family="sans-serif" font-size="9">Idle</text>
+
+    <rect x="15" y="190" width="150" height="40" rx="8" fill="#1c0e16"/>
+    <circle cx="35" cy="210" r="8" fill="#6d3d52"/>
+    <text x="52" y="208" fill="#e5ded8" font-family="sans-serif" font-size="11">Vision Synthesizer</text>
+    <text x="52" y="222" fill="#88707c" font-family="sans-serif" font-size="9">Ready</text>
+
+    <!-- Main Workspace -->
+    <!-- Prompt input box simulation -->
+    <rect x="205" y="65" width="450" height="60" rx="10" fill="#200f1a" stroke="#3d1d2b"/>
+    <text x="225" y="90" fill="#f8f4f0" font-family="sans-serif" font-size="11">"Refactor the authentication pipeline to use zero-knowledge proofs with Rust microservice"</text>
+    <rect x="580" y="80" width="60" height="28" rx="6" fill="url(#rubyGlow)"/>
+    <text x="610" y="98" fill="#fff" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">RUN</text>
+
+    <!-- Code output panel -->
+    <rect x="205" y="140" width="450" height="245" rx="10" fill="#12070d" stroke="#381826"/>
+    <!-- Code title tab -->
+    <rect x="205" y="140" width="450" height="28" rx="10" fill="#1c0d15"/>
+    <rect x="205" y="158" width="450" height="10" fill="#1c0d15"/>
+    <text x="225" y="158" fill="#a8929e" font-family="monospace" font-size="10">auth_pipeline.rs</text>
+    
+    <!-- Code lines -->
+    <text x="225" y="190" fill="#c52233" font-family="monospace" font-size="11">pub async fn <tspan fill="#f3c99f">verify_zk_proof</tspan><tspan fill="#e5ded8">(proof: &amp;Proof) -&gt; Result&lt;bool, Error&gt; {</tspan></text>
+    <text x="245" y="210" fill="#a8929e" font-family="monospace" font-size="11">// Verify cryptographic commitment on-chain</text>
+    <text x="245" y="230" fill="#e5ded8" font-family="monospace" font-size="11">let commitment = <tspan fill="#e03b4c">CommitmentScheme::evaluate</tspan>(proof)?;</text>
+    <text x="245" y="250" fill="#e5ded8" font-family="monospace" font-size="11">let is_valid = <tspan fill="#e5a86d">circuit::synthesize_gate</tspan>(&amp;commitment).await?;</text>
+    <text x="245" y="270" fill="#c52233" font-family="monospace" font-size="11">if <tspan fill="#e5ded8">is_valid {</tspan></text>
+    <text x="265" y="290" fill="#48bb78" font-family="monospace" font-size="11">telemetry::log_audit("ZK_TOKEN_ISSUED", &amp;proof.id);</text>
+    <text x="265" y="310" fill="#f3c99f" font-family="monospace" font-size="11">Ok(true)</text>
+    <text x="245" y="330" fill="#c52233" font-family="monospace" font-size="11">} else {</text>
+    <text x="265" y="350" fill="#e03b4c" font-family="monospace" font-size="11">Err(Error::UnauthorizedSignature)</text>
+    <text x="245" y="370" fill="#c52233" font-family="monospace" font-size="11">}}</text>
+  </g>
+</svg>
